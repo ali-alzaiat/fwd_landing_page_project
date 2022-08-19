@@ -14,7 +14,7 @@
   
 ## Project description
 
-The project is a webpage made using HTML, CSS and JavaScript.
+The project is a responsive webpage made using HTML, CSS and JavaScript. The webpage contains links for each section, which scroll to that section when clicked.
 
 
 
@@ -24,7 +24,7 @@ The project is a webpage made using HTML, CSS and JavaScript.
   
   ### Navigation bar
   
-  The project is a webpage with many sections and a dynamic navigation bar which contains the title of each section and scrolls to that section smoothly when clicked. When the section is displayed on the screen, its title in the navigation bar is highlighted.
+  The project is a webpage with many sections and a dynamic navigation bar which contains the title of each section and scrolls to that section smoothly when clicked. When the section is displayed on the screen, its title in the navigation bar is highlighted. When displayed on a smartphone, the navigation bar displays only the title of the first section and a Trigram for Heaven symbol that displays the titles of the remaining sections when clicked.
   
   
   ### Sections active state
