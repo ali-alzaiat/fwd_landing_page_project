@@ -35,6 +35,7 @@ const mainHero = document.querySelector(".main__hero");
  * 
 */
 
+//Add a new anchor.
 const newAnchor = (id,data) => `<a href="#${id}" class="menu__link" id="${id}_link">${data}</a>`;
 
 /**
@@ -75,7 +76,7 @@ const onScreen = (e) => {						//If the section is near the top of the viewport 
 	},300);
 };
 
-// Scroll to anchor ID using scrollTO event
+// Scroll to a section using the section ID.
 const scrollToSection = (sectionId) => {
 	document.querySelector(sectionId).scrollIntoView({behavior: "smooth"});
 };
@@ -87,7 +88,7 @@ const scrollToSection = (sectionId) => {
 */
 
 drop.addEventListener("click",(e)=>{			//when the trigram for Heaven symbol is clicked display/hide all elements in navbar except the first one.
-	navbar.classList.toggle("responsive");
+	navbar.classList.toggle("responsive");		//If the navigation bar list classList contains a "responsive" class or if it doesn't add it.
 	e.preventDefault();
 });
 
@@ -112,16 +113,16 @@ window.addEventListener("scroll",() => {
 
 // Display scroll to the top button when the user scrolls below the fold of the page.
 window.addEventListener("scroll",() => {
-	if(document.body.scrollTop > 50){
+	if(document.body.scrollTop > 50){	//Display the scroll to the top button when the body's scrollTop property is bigger than 50.
 		up.style.display = "block";
 	}
-	else{
+	else{					//Else, hide it.
 		up.style.display = "none";
 	}
 });
 
 // Scroll to the top of the page when scroll to the top button is clicked.
-up.addEventListener("click",() => {
+up.addEventListener("click",() => {		//When clicked scroll to the top of the window smoothly.
 	window.scrollTo({
 		top: 0,
 		behavior: "smooth"
